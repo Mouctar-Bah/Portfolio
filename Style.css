@@ -1,4 +1,63 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+a,a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url(C:\Users\mmbah\OneDrive\Desktop\Portfolio\city.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header .navbar .logo a{
+    color: black;
+    font-size: 30px;
+    margin-left:50px; 
+}
+
+.header .navbar .menu ul{
+    margin-left: 192px;
+}
+
+.header .navbar .menu ul li{
+    display: inline-block; 
+    margin-right: 35px; 
+    align-items: center; 
+}
+
+.header .navbar .menu ul li a{
+    color:black;
+    font-size: 17px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+
+}
+
+.header .contact-info{
+    margin-left: 400px;
+}
+
+.header .contact-info ul{
+
+}
+
+
