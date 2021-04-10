@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 1.5px;
 }
+
 a,a:hover{
     text-decoration: none;
 }
@@ -11,13 +13,18 @@ ul{
     list-style: none;
 }
 
+h4, h5{
+    color: white;
+}
+
 .header{
     position: relative;
     width: 100%;
-    height: 100vh; 
-    background-image: url(C:\Users\mmbah\OneDrive\Desktop\Portfolio\city.jpg);
-    background-size: cover;
+    height: 500px; 
+    background-image: url(Images/city.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header .navbar{
@@ -29,35 +36,99 @@ ul{
 }
 
 .header .navbar .logo a{
-    color: black;
     font-size: 30px;
-    margin-left:50px; 
+    margin-left: 200px; 
+    color: white;
+    line-height: 10em;
 }
 
 .header .navbar .menu ul{
-    margin-left: 192px;
+    margin-left: 350px;
+    line-height: 10em;
 }
 
 .header .navbar .menu ul li{
     display: inline-block; 
-    margin-right: 35px; 
+    margin-right: 60px; 
     align-items: center; 
 }
 
 .header .navbar .menu ul li a{
-    color:black;
-    font-size: 17px;
-    font-weight: 500px;
-    letter-spacing: 1px;
-
+    color:white;
+    font-size: 20px;
+    /* font-weight: 500px; */
+    
 }
 
-.header .contact-info{
-    margin-left: 400px;
+.header .education{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+    line-height: normal;
 }
 
-.header .contact-info ul{
-
+.header .media ul{
+    margin-left: 330px;
+    line-height: 10em;
 }
+
+.header .media ul li{
+    padding-top: 20px;
+    display: inline-block; 
+    margin-left: 80px; 
+    align-items: center;  
+}
+
+.header .media ul li a{
+    color: white;
+    font-size: 30px;
+}
+
+/* Main section styling */
+.container .main{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2em;
+    letter-spacing: 2em;
+}
+
+.main h4{
+    color: black;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+.main .aboutMe p{
+    text-align: justify;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 100px;
+    text-indent: 50px;
+}
+
+.main .projects .leftSide{
+    width: 30%;
+    padding: auto;
+    margin-left: 150px;
+}
+
+
+
+.main .projects .rightSide{
+    width: 60%;
+    padding: auto;
+    margin-left: 150px;
+}
+
+
+/* footer section styling */
+.footer{
+    background: #111;
+    padding: 20px 23px;
+    color: white;
+}
+
+
 
 
