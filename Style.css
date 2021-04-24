@@ -5,6 +5,44 @@
     letter-spacing: 1.5px;
 }
 
+body{
+    font-family: basic-sans, sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #333;
+    background: white;
+
+    min-height: 100%;
+
+    display: grid;
+    /* grid: auto / 1em 1fr 1em; */ 
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background: #006660;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn-big{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+
+.btn:hover{
+   color: white !important;
+   background-attachment: #005255;
+}
+
+.text-input{
+    padding: .7rem 1rem;
+    display: block;
+    width: 500px;
+    border-radius: 5px;
+    outline: none;
+}
+
 a,a:hover{
     text-decoration: none;
 }
@@ -17,11 +55,16 @@ h4, h5{
     color: white;
 }
 
+i{
+    padding: 6px;  
+    size: 100px;
+}
+
 .header{
     position: relative;
     width: 100%;
-    height: 500px; 
-    background-image: url(Images/city.jpg);
+    height: 1000px; 
+    background-image: url(Images/WP3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,11 +75,11 @@ h4, h5{
     height: 80px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .header .navbar .logo a{
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 200px; 
     color: white;
     line-height: 10em;
@@ -55,27 +98,28 @@ h4, h5{
 
 .header .navbar .menu ul li a{
     color:white;
-    font-size: 20px;
+    font-size: 25px;
     /* font-weight: 500px; */
     
 }
 
 .header .education{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 250px;
     font-size: 35px;
-    line-height: normal;
+    line-height: 2em;
 }
 
 .header .media ul{
-    margin-left: 330px;
+    margin-left: 375px;
+    margin-top: 360px;
     line-height: 10em;
 }
 
 .header .media ul li{
     padding-top: 20px;
     display: inline-block; 
-    margin-left: 80px; 
+    margin-left: 130px; 
     align-items: center;  
 }
 
@@ -86,13 +130,13 @@ h4, h5{
 
 /* Main section styling */
 .container .main{
-    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 2em;
+    line-height: 3em;
     letter-spacing: 2em;
 }
 
 .main h4{
+    font-size: 45px;
     color: black;
     margin-top: 100px;
     margin-left: 100px;
@@ -100,25 +144,52 @@ h4, h5{
 }
 
 .main .aboutMe p{
+    font-size: 25px;
     text-align: justify;
     padding: 20px;
     margin-left: 80px;
-    margin-right: 100px;
+    margin-right: 200px;
     text-indent: 50px;
 }
-
-.main .projects .leftSide{
-    width: 30%;
-    padding: auto;
-    margin-left: 150px;
+.main .projects{
+    margin-top: 100px;
 }
 
+.main .projects h4{
+    font-size: 45px;
+}
+.main .projects .leftSide{
+    width: 20%; 
+    float: left; 
+    margin-left: 125px;
+    
+}
+
+.main .projects .leftSide ol{
+    font-size: 25px;
+    
+}
 
 
 .main .projects .rightSide{
     width: 60%;
-    padding: auto;
-    margin-left: 150px;
+    float: right;
+    margin-bottom: 250px;
+    margin-right: 200px;
+}
+
+.main .projects .rightSide h6{
+    font-size: 30px;
+    
+}
+
+.main .projects .rightSide p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.main .projects .rightSide ul{
+    font-size: 25px;
 }
 
 
@@ -127,7 +198,67 @@ h4, h5{
     background: #111;
     padding: 20px 23px;
     color: white;
+    grid-column: 1 / -1;
+
+    margin-top: auto;
 }
+
+.footer .media{
+    float: right;
+    padding-inline-end: 20px;
+    margin-top: 650px;
+    
+}
+
+.footer .Contact h6{
+    font-size: 25px;
+
+}
+
+.footer .media ul li{
+    font-size: 25px;
+    float: left;
+    padding: auto;
+    margin-left: 50px;
+}
+
+
+
+
+
+.footer .Contact  .contact-input{
+    line-height: 1.5rem;
+    font-size: 1.25em;
+    padding: .7rem 1.2rem;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.footer .Contact  .contact-input:focus{
+    background: #1a1a1a;
+}
+
+.footer .Contact .contact-btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 75px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    background-color: #005255;
+    transition: 2s;
+}
+
+
+.footer span{
+    font-size: 1.5em;
+    /* text-align: center;
+    position: relative;
+    margin-left: calc(100% - 1000px); */
+}
+
 
 
 

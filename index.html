@@ -15,27 +15,26 @@
     <div class="header">
         <div class="navbar">
             <div class="logo"> 
-                <a href="#">Mamadou M. Bah</a>
+                <a href="#home">Mamadou Mouctar Bah</a>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#">Technologies</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-        <div class="education">
+        <div class="education" id="home">
             <h4>Computer Science Student</h4>
             <h5>University of Wisconsin Platteville</h5>
         </div>
         <div class="media">
             <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#"> GitHub</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/mamadou-bah-6551991a9/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/Mouctar-Bah" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="Resume.html" target="_blank"><i class="far fa-file"></i>Resume</a></li>
             </ul>
         </div>
     </div>
@@ -44,7 +43,7 @@
     <!--------------------------------Start main---------------------------->
     <div class="container">
         <div class="main">
-            <div class="aboutMe">
+            <div class="aboutMe" id="aboutme">
                 <h4>About me:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -56,7 +55,7 @@
                     versions of Lorem Ipsum. 
                 </p>
             </div>
-            <div class="projects">
+            <div class="projects" id="projects">
                 <h4>Projects:</h4>
                 <div class="leftSide">
                     <ol>
@@ -96,13 +95,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="Contact">
-                <h6>Name:</h6>
-                <h6>Email:</h6>
-                <h6>Phone Number:</h6>
-                <h6>Message:</h6>
-            </div>
 
         </div>
     </div>
@@ -110,14 +102,34 @@
 
     <!--------------------------------start Footer-------------------------->
     <footer class="footer">
-        &copy; All right reserved | Designed by Mamadou M. Bah
         <div class="media">
-            <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#"> GitHub</a></li>
-                <li><a href="#">Resume</a></li>
+            <ul>b
+                <li><a href="https://www.linkedin.com/in/mamadou-bah-6551991a9/" target="_lank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/Mouctar-Bah" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="Resume.html" target="_blank"><i class="far fa-file"></i>Resume</a></li>
             </ul>
         </div>
+        <div class="Contact" id="contact">
+            <h6>Talk to me!</h6>
+            <form action="https://formsubmit.co/mmbah732@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="New Job Oportunity Yes!!!">
+                <input type="name" name="name" class="text-input contact-input"
+                placeholder="Name" required>
+                <input type="email" name="email" class="text-input contact-input"
+                placeholder="Email" required>
+                <input type="PhoneNumber" name="phone number" class="text-input contact-input"
+                placeholder="Phone Number" required>
+                <textarea name="message" class="text-input contact-input"
+                 cols="100" rows="10" placeholder="Your message..." required></textarea>
+                <button type="submit" class="btn btn-big contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    Send
+                </button>
+                <input type="hidden" name="_autoresponse" value="Thank you for reaching out, 
+                I'll get back to you as soon as posible.">
+            </form>
+        </div>
+        <span> &copy; All right reserved | Designed by Mamadou Mouctar Bah </span>
     </footer>
     <!--------------------------------End Footer---------------------------->
 </body>
