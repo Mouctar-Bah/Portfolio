@@ -51,9 +51,6 @@ ul{
     list-style: none;
 }
 
-h4, h5{
-    color: white;
-}
 
 i{
     padding: 6px;  
@@ -103,16 +100,33 @@ i{
     
 }
 
-.header .education{
+.header .intro h4{
+    color: white;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 150px;
     font-size: 35px;
     line-height: 2em;
 }
 
+.header .intro h2{
+    color: white;
+    text-align: center;
+    margin-left: 300px;
+    font-size: 75px;
+    line-height: 1.5em;
+}
+
+.header .intro h6{
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 1em;
+}
+
 .header .media ul{
     margin-left: 375px;
-    margin-top: 360px;
+    margin-top: 400px;
     line-height: 10em;
 }
 
@@ -126,6 +140,10 @@ i{
 .header .media ul li a{
     color: white;
     font-size: 30px;
+}
+
+.skills{
+    background-image: url(java_css_html.jpg);
 }
 
 /* Main section styling */
