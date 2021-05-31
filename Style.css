@@ -10,7 +10,6 @@ body{
     font-size: 1.125em;
     line-height: 1.6;
     color: #333;
-    background: white;
 
     min-height: 100%;
 
@@ -18,8 +17,104 @@ body{
     /* grid: auto / 1em 1fr 1em; */ 
 }
 
+.header-img{
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    background-image: url(Images/WP3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img{
+    object-fit: contain;
+    width: auto;
+    height: 10vh;
+    float: left;
+    padding: 10px;
+}
+
+.menu nav{
+    font-size: 1vw;
+    float: right;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.menu nav a{
+    margin-left: 2vw;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 8px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    front-size: 14px;
+    font-weight: bold; 
+}
+
+.menu a:hover {
+    text-decoration: underline; 
+}
+
+.intro{
+    color: white;
+    text-align: center;
+    margin-top: 175px;
+    font-size: 35px;
+    line-height: 2em;
+}
+
+.intro h4{
+    text-transform: uppercase;
+}
+
+.intro h2{
+    color: rgb(175, 68, 68);
+    text-transform: uppercase;
+}
+
+.intro h6{
+    color: rgb(26, 8, 184);
+}
+
+.media ul {
+    list-style: none;
+    margin: 75px 210px;
+    
+}
+
+.media li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.media a {
+    text-decoration: none;
+    color:rgb(214, 127, 26);
+    text-transform: uppercase;
+    front-size: 14px;
+    font-weight: bold; 
+}
+
+.media a:hover {
+    text-decoration: underline;
+}
+
 .btn{
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
     background: #006660;
     color: white;
     border: 1px solid transparent;
@@ -57,103 +152,14 @@ i{
     size: 100px;
 }
 
-@media screen and (min-width: 1000px){
-.header{
-    position: relative;
-    width: 100%;
-    height: 1000px; 
-    background-image: url(Images/WP3.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.header .navbar{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-}
-
- .logo img{
-    position: absolute;
-    margin-left: 200px; 
-    margin-top: 5px;
-}
-
-.header .navbar .menu ul{
-    margin-left: 350px;
-    line-height: 10em;
-}
-
-.header .navbar .menu ul li{
-    display: inline-block; 
-    margin-right: 60px; 
-    align-items: center; 
-}
-
-.header .navbar .menu ul li a{
-    color:white;
-    font-size: 25px;
-    /* font-weight: 500px; */
-    
-}
-
-.header .intro h4{
-    color: white;
-    text-align: center;
-    margin-top: 150px;
-    font-size: 35px;
-    line-height: 2em;
-}
-
-.header .intro h2{
-    color: white;
-    text-align: center;
-    margin-left: 300px;
-    font-size: 75px;
-    line-height: 1.5em;
-}
-
-.header .intro h6{
-    color: white;
-    text-align: center;
-    margin-left: 50px;
-    font-size: 25px;
-    line-height: 1em;
-}
-
-.header .media ul{
-    margin-left: 375px;
-    margin-top: 400px;
-    line-height: 10em;
-}
-
-.header .media ul li{
-    padding-top: 20px;
-    display: inline-block; 
-    margin-left: 130px; 
-    align-items: center;  
-}
-
-.header .media ul li a{
-    color: white;
-    font-size: 30px;
-}
-
-.skills{
-    background-image: url(java_css_html.jpg);
-}
-
-/* Main section styling */
-.container .main{
+/* main page styling */
+main{
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 3em;
     letter-spacing: 2em;
 }
 
-.main h4{
+main h4{
     font-size: 45px;
     color: black;
     margin-top: 100px;
@@ -161,7 +167,7 @@ i{
     padding: 5px;
 }
 
-.main .aboutMe p{
+.aboutMe p{
     font-size: 25px;
     text-align: justify;
     padding: 20px;
@@ -169,27 +175,27 @@ i{
     margin-right: 200px;
     text-indent: 50px;
 }
-.main .projects{
+.projects{
     margin-top: 100px;
 }
 
-.main .projects h4{
+.projects h4{
     font-size: 45px;
 }
-.main .projects .leftSide{
+.projects .leftSide{
     width: 20%; 
     float: left; 
     margin-left: 125px;
     
 }
 
-.main .projects .leftSide ol{
+.projects .leftSide ol{
     font-size: 25px;
     
 }
 
 
-.main .projects .rightSide{
+.projects .rightSide{
     width: 60%;
     float: right;
     margin-bottom: 250px;
@@ -201,18 +207,17 @@ i{
     
 }
 
-.main .projects .rightSide p {
+.projects .rightSide p {
     font-size: 25px;
     margin-bottom: 50px;
 }
 
-.main .projects .rightSide ul{
+.projects .rightSide ul{
     font-size: 25px;
 }
 
-
 /* footer section styling */
-.footer{
+footer {
     background: #111;
     padding: 20px 23px;
     color: white;
@@ -221,30 +226,26 @@ i{
     margin-top: auto;
 }
 
-.footer .media{
+/* .footer .media{
     float: right;
     padding-inline-end: 20px;
     margin-top: 650px;
     
-}
+} */
 
 .footer .Contact h6{
-    font-size: 25px;
+    font-size: 50px;
 
 }
 
-.footer .media ul li{
+/* .footer .media ul li{
     font-size: 25px;
     float: left;
     padding: auto;
     margin-left: 50px;
-}
+} */
 
-
-
-
-
-.footer .Contact  .contact-input{
+.Contact  .contact-input{
     line-height: 1.5rem;
     font-size: 1.25em;
     padding: .7rem 1.2rem;
@@ -254,14 +255,14 @@ i{
 
 }
 
-.footer .Contact  .contact-input:focus{
+.Contact  .contact-input:focus{
     background: #1a1a1a;
 }
 
-.footer .Contact .contact-btn{
+.Contact btn {
     width: 150px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 75px;
     font-size: 1.25em;
     border-radius: 5px;
@@ -270,315 +271,9 @@ i{
 }
 
 
-.footer span{
-    font-size: 1.5em;
-    /* text-align: center;
-    position: relative;
-    margin-left: calc(100% - 1000px); */
+footer span{
+    font-size: 1em;
+    text-align: center;
+    margin: calc(100% - 65vw);
 }
-
-}
-
-/* Media query for iPad size screen */
-@media only screen and (min-width: 768px){
-    .header{
-        position: relative;
-        width: 100%;
-        height: 500px; 
-        background-image: url(Images/WP3.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    /* .header .logo{
-        width: 100%;
-        height: 50px;
-        display: flex;
-        align-items: left;
-        padding-top: 50px;
-    } */
-    
-     .logo img{
-        position: absolute;
-    }
-
-    .hambuger{
-        display: block;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-
-        appearance: none;
-        background: none;
-        outline: none;
-        border: none; 
-    }
-    
-    .hambuger .bar .hambuger::after, .hambuger::before{
-        content: '';
-        width: 100%;
-        height: 5px;
-        background-color: white;
-        margin: 6px 0px;
-        transition: 0.4s;
-
-    }
-
-    .hambuger.is-active::before{
-        transform: rotate(-45deg) translate(-8px, 6px);
-
-    }
-
-    .hambuger.is-active::after{
-        transform: rotate(45deg) translate(-9px, -8px);
-
-    }
-    .hambuger.is-active .bar{
-        opacity: 0;
-    }
-
-    .mobile-nav{
-        display: block;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        min-height: 100vh;
-        z-index: 98;
-        background-color: darkblue;
-        padding-top: 120px;
-
-
-    }
-
-    .mobile-nav.is-active{
-        left: 0; 
-    }
-
-    .mobile-nav  a {
-        display: block;
-        text-align: center;
-        margin: 0 auto 16px;
-        width: 100%;
-        max-width: 200px;
-        padding: 12px 16px;
-        background-color: black;
-
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .mobile-nav a:hover{
-        background-color: #241F44;
-
-    }
-
-    @media (min-width: 768px) {
-        .mobile-nav{
-            display: none;
-        }
-
-        .hambuger{
-            display: none;
-        }
-        
-    }
-    
-    /* .header .menu ul{
-        margin-left: 350px;
-        line-height: 10em;
-    }
-    
-    .header .menu ul li{
-        display: inline-block; 
-        margin-right: 60px; 
-        align-items: center; 
-    }
-    
-    .header  .menu ul li a{
-        color:white;
-        font-size: 25px;
-        /* font-weight: 500px; */
-        
-    } */
-    
-    .header .intro h4{
-        color: white;
-        text-align: center;
-        margin-top: 150px;
-        font-size: 35px;
-        line-height: 2em;
-    }
-    
-    .header .intro h2{
-        color: white;
-        text-align: center;
-        margin-left: 300px;
-        font-size: 75px;
-        line-height: 1.5em;
-    }
-    
-    .header .intro h6{
-        color: white;
-        text-align: center;
-        margin-left: 50px;
-        font-size: 25px;
-        line-height: 1em;
-    }
-    
-    .header .media ul{
-        margin-left: 375px;
-        margin-top: 400px;
-        line-height: 10em;
-    }
-    
-    .header .media ul li{
-        padding-top: 20px;
-        display: inline-block; 
-        margin-left: 130px; 
-        align-items: center;  
-    }
-    
-    .header .media ul li a{
-        color: white;
-        font-size: 30px;
-    }
-    
-    .skills{
-        background-image: url(java_css_html.jpg);
-    }
-    
-    /* Main section styling */
-    .container .main{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        line-height: 3em;
-        letter-spacing: 2em;
-    }
-    
-    .main h4{
-        font-size: 45px;
-        color: black;
-        margin-top: 100px;
-        margin-left: 100px;
-        padding: 5px;
-    }
-    
-    .main .aboutMe p{
-        font-size: 25px;
-        text-align: justify;
-        padding: 20px;
-        margin-left: 80px;
-        margin-right: 200px;
-        text-indent: 50px;
-    }
-    .main .projects{
-        margin-top: 100px;
-    }
-    
-    .main .projects h4{
-        font-size: 45px;
-    }
-    .main .projects .leftSide{
-        width: 20%; 
-        float: left; 
-        margin-left: 125px;
-        
-    }
-    
-    .main .projects .leftSide ol{
-        font-size: 25px;
-        
-    }
-    
-    
-    .main .projects .rightSide{
-        width: 60%;
-        float: right;
-        margin-bottom: 250px;
-        margin-right: 200px;
-    }
-    
-    .main .projects .rightSide h6{
-        font-size: 30px;
-        
-    }
-    
-    .main .projects .rightSide p {
-        font-size: 25px;
-        margin-bottom: 50px;
-    }
-    
-    .main .projects .rightSide ul{
-        font-size: 25px;
-    }
-    
-    
-    /* footer section styling */
-    .footer{
-        background: #111;
-        padding: 20px 23px;
-        color: white;
-        grid-column: 1 / -1;
-    
-        margin-top: auto;
-    }
-    
-    .footer .media{
-        float: right;
-        padding-inline-end: 20px;
-        margin-top: 650px;
-        
-    }
-    
-    .footer .Contact h6{
-        font-size: 25px;
-    
-    }
-    
-    .footer .media ul li{
-        font-size: 25px;
-        float: left;
-        padding: auto;
-        margin-left: 50px;
-    }
-    
-    
-    
-    .footer .Contact  .contact-input{
-        line-height: 1.5rem;
-        font-size: 1.25em;
-        padding: .7rem 1.2rem;
-        margin-top: 15px;
-        border: none;
-        border-radius: 5px;
-    
-    }
-    
-    .footer .Contact  .contact-input:focus{
-        background: #1a1a1a;
-    }
-    
-    .footer .Contact .contact-btn{
-        width: 150px;
-        height: 50px;
-        margin-top: 20px;
-        margin-bottom: 75px;
-        font-size: 1.25em;
-        border-radius: 5px;
-        background-color: #005255;
-        transition: 2s;
-    }
-    
-    
-    .footer span{
-        font-size: 1.5em;
-        /* text-align: center;
-        position: relative;
-        margin-left: calc(100% - 1000px); */
-    }
-}
-
-
-
-
 
